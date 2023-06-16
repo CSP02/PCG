@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Meta tag for embed-->
+        <meta name="title" content="PCG">
+        <meta name="description"
+            content="PCG is a profile card generator which generates a profile card with many customizable styles. Get your profile card by visiting this website.">
+        <meta name="keywords" content="Profile card, profile card generator, generator, profile">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+        <meta name="author" content="CSP">
+        
+        <!---->
+        <title>Profile card generator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link rel="shortcut icon" href="Resources/PCG_Logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <div id="disclaimer">
+            <i class="fa-solid fa-warning"></i> This website won't store any details provided by you.
+        </div>
+        <div id="wrapper">
+            <div id="details">
+                <div id="social_details">
+                    <h1>Social media details:</h1>
+                    <div class="input_block">
+                        <label for="pfp">Profile Picture:</label>
+                        <input type="file" name="pfp" id="pfp_input" accept="image/*" required>
+                    </div>
+                    <div class="input_block">
+                        <label for="name">Username:</label>
+                        <input type="text" name="name" id="name_input" required>
+                    </div>
+                    <div class="input_block">
+                        <label for="background_color">Background color:</label>
+                        <input type="color" name="background_color" id="background_color" value="#373737">
+                    </div>
+                    <div class="input_block">
+                        <label for="body_background_color">Body background color:</label>
+                        <input type="color" name="body_background_color" id="body_background_color" value="#292929">
+                    </div>
+                    <div class="input_block">
+                        <label for="text_color">Text color:</label>
+                        <input type="color" name="text_color" id="text_color" value="#dbdbdb">
+                    </div>
+                    <div class="input_block">
+                        <label for="border_color">Border color:</label>
+                        <input type="color" name="border_color" id="border_color" value="#191919">
+                    </div>
+                    <div class="input_block">
+                        <label for="box_shadow_color">Box Shadow color</label>
+                        <input type="color" name="box_shadow_color" id="box_shadow_color" value="#232323">
+                    </div>
+                    <div class="input_block">
+                        <label for="github_link">Github Username:</label>
+                        <input type="text" name="github_link" id="github_link">
+                    </div>
+                    <div class="input_block">
+                        <label for="ig_link">Instagram username:</label>
+                        <input type="text" name="ig_link" id="ig_link">
+                    </div>
+                    <div class="input_block">
+                        <label for="lin_link">linkedin profile link:</label>
+                        <input type="text" name="lin_link" id="lin_link">
+                    </div>
+                    <div class="input_block">
+                        <label for="discord_link">Discord Username or server link:</label>
+                        <input type="text" name="discord_link" id="discord_link">
+                    </div>
+                    <div class="input_block">
+                        <label for="twitter_link">Twitter handle:</label>
+                        <input type="text" name="twitter_link" id="twitter_link">
+                    </div>
+                </div>
+                <div id="contact_details">
+                    <h1>Contact details:</h1>
+                    <div class="input_block">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </div>
+                <div id="other_details">
+                    <h1>Other details(optional):</h1>
+                    <div class="input_block">
+                        <label for="bio">Bio:</label>
+                        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <button type="submit" id="upload_image">Submit</button>
+                <button id="download">Download</button>
+                <button id="print">Print</button>
+            </div>
+            <div id="profile_card">
+                <iframe id="my_info_holder" title="preview">
+
+                </iframe>
+            </div>
+        </div>
+    </body>
+
+</html>
